@@ -1,14 +1,25 @@
+/* *{
+    border: 1px solid pink;
+} */
+
 *, *::before, *::after {
     box-sizing: border-box;
-  }
+  } */
   
   * {
     margin: 0;
   }
   
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
   }
   
   img, picture, video, canvas, svg {
@@ -28,9 +39,91 @@
   #root, #__next {
     isolation: isolate;
   }
-  
-  body, html {
-    background-image: linear-gradient(to top, #b4d2d3 0%, #57b8bc 99%);
-    background-repeat: no-repeat;
-    height: 100%;
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 20dvh;
+    background-color: #740001;
+    color: #eeba30;
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    height: 10dvh;
+    width: 45dvw;
+    margin-left: 20px;
+  }
+
+  .shares, .playlists, .videos {
+    height: 10 dvh;
+    width: 15dvw;
+    display: flex;
+  }
+
+  .share-icon, .playlist-icon, .vid-icon {
+    height: 3dvh;
+    margin:0;
+    margin-right: 5px;
+  }
+
+  .right-nav {
+    display: flex;
+    flex-direction: column;
+    height: 20dvh;
+    width: 20dvw;
+  }
+
+  .user-drop-down {
+    height: 8dvh;
+    width: 20dvw;
+    display: flex;
+    align-items: center;
+  }
+
+  h4 {
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .person-icon {
+    height: 4.5dvh;
+    margin:0;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 13px solid #eeba30;
+    border-radius: 4px 4px 4px;
+    margin-left: 5px;
+  }
+
+  .logo {
+    height: 12dvh;
+    width: 20dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    color: white;
+    margin-right: -35px;
+  }
+
+  .hogwarts-logo {
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    /* margin-right: -35px; */
+  }
+
+  main {
+    height: 80dvh;
   }
