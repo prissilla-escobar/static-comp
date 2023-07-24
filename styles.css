@@ -1,13 +1,10 @@
-/* *{
-    border: 1px solid pink;
-} */
-
 *, *::before, *::after {
     box-sizing: border-box;
   } */
   
   * {
     margin: 0;
+    background-color: #eeba30;
   }
   
   html, body {
@@ -65,6 +62,7 @@
 
   .shares:hover, .playlists:hover, .videos:hover {
    color: black;
+   font-weight: bolder;
   }
 
   .share-icon, .playlist-icon, .vid-icon {
@@ -133,15 +131,20 @@
 
   main {
     height: 80dvh;
+    width: 100%;
     background-color: #eeba30;
     color:#740001;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow: scroll visible;
+    flex-wrap: wrap;
   }
 
   h1 {
-    margin-left: 20px;
+    background-color: #eeba30;
+    margin: 0;
+    padding: 20px;
+    color:#740001;
   }
 
   .card {
@@ -150,7 +153,8 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 5px 4px #af8512;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
   }
 
   .card:hover {
@@ -163,7 +167,6 @@
     height: 22dvh;
     display:flex;
     justify-content: space-between;
-    background-image: url(https://images.ctfassets.net/usf1vwtuqyxm/5Xpzr1HK3TCNJOTBvD2okc/a16952f5548e490a91e9f78e1be97caa/HP-F6-half-blood-prince-ron-pyjamas-smirking-love-potion-web-landscape?fm=jpg&q=70&w=2560);
     background-size: cover;
     color: white;
 }
