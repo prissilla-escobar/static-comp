@@ -59,8 +59,12 @@
 
   .shares, .playlists, .videos {
     height: 10 dvh;
-    width: 15dvw;
+    width: 14.5dvw;
     display: flex;
+  }
+
+  .shares:hover, .playlists:hover, .videos:hover {
+   color: black;
   }
 
   .share-icon, .playlist-icon, .vid-icon {
@@ -103,6 +107,10 @@
     margin-left: 5px;
   }
 
+  .triangle:hover {
+    border-top: 13px solid black;
+  }
+
   .logo {
     height: 12dvh;
     width: 20dvw;
@@ -121,9 +129,126 @@
     display: block;
     max-width: 80%;
     max-height: 80%;
-    /* margin-right: -35px; */
   }
 
   main {
     height: 80dvh;
+    background-color: #eeba30;
+    color:#740001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  .card {
+    height: 60dvh;
+    width: 22dvw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 4px #af8512;
+    margin-left: 20px;
+  }
+
+  .card:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 0 5px 4px #740001;
+  }
+
+  .image-share-views {
+    position: relative;
+    height: 22dvh;
+    display:flex;
+    justify-content: space-between;
+    background-image: url(https://images.ctfassets.net/usf1vwtuqyxm/5Xpzr1HK3TCNJOTBvD2okc/a16952f5548e490a91e9f78e1be97caa/HP-F6-half-blood-prince-ron-pyjamas-smirking-love-potion-web-landscape?fm=jpg&q=70&w=2560);
+    background-size: cover;
+    color: white;
+}
+
+  .card-share-icon {
+    height: 11dvh;
+    width: 7dvw;
+    margin-top: 5px;
+  }
+
+  .card-share-icon:hover {
+    height: 15dvh;
+    width: 10dvw;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 20px;
+  }
+
+  .veiw-text{
+    font-size: medium;
+  }
+
+  .number-views {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+
+  .card-info {
+    height: 38dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+  }
+
+  .name-date {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 15px;
+    color:#740001;
+    opacity: .7;
+  }
+
+  .url-box {
+    height: 8dvh;
+    width: 18dvw;
+    background-color: #740001;
+    opacity: .7;
+    color:#eeba30;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .url-box:hover {
+    outline: 3px dashed black;
+  }
+
+  .playlist-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .playlist, .attachment {
+    font-size: 15px;
+  }
+
+  .playlist-name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .attachment-count {
+    font-size: 35px;
   }
