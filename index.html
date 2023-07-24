@@ -2,37 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>Static Comp</title>
     <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Oswald:wght@500&display=swap'>
   </head>
   <body>
-    <header>
-        <section>
-            <section class="user-drop-down"></section>
-            <section class="logo"></section>
-        </section>
-        <section>
-            <section class="shares"></section>
-            <section class="playlists"></section>
-            <section class="videos"></section>
-        </section>
-    </header>
+    <article class="nav-bar">
+        <div class="left-nav">
+            <div class="shares"><img class="share-icon" src="/Users/lasillysilla/Downloads/share.png">SHARES</div>
+            <div class="playlists"><img class="playlist-icon" src="/Users/lasillysilla/Downloads/playlist.png">PLAYLISTS</div>
+            <div class="videos"><img class="vid-icon" src="/Users/lasillysilla/Downloads/camera.png">PERSONAL VIDEOS</div>
+        </div>
+        <div class="right-nav">
+            <div class="user-drop-down">
+                <img class="person-icon" src="/Users/lasillysilla/Downloads/user-profile (2).png">
+                <h4>Welcome, Hermione</h4>
+                <div class="triangle"></div>
+            </div>
+            <div class="logo">
+                <h2>knowLove<br>&friendship</h2>
+                <img class="hogwarts-logo" src="https://1000logos.net/wp-content/uploads/2021/04/Hogwarts-Logo-768x432.png">
+            </div>
+        </div>
+    </article>
     <main>
         <h1>Shares</h1>
         <section class="card">
-            <section class="image-share-views"></section>
+            <div class="image-share-views">
+                <img class="card-share-icon" src="/Users/lasillysilla/Downloads/share-link (1).png">
+                <div class="views">
+                    <text class="view-text">VIEWS</text>
+                    <text class="number-views">02</text>
+                </div>
+            </div>
             <section class="card-info">
-                <section>
-                    <text>Name</text>
-                    <text>Date</text>
-                </section>
-                <section class="url-box">URL</section>
-                <section>
-                    <text>PLAYLIST</text>
-                    <text>Name of Playlist</text>
-                    <text>ATTACHMENTS</text>
-                    <text>04</text>
-                </section>
+                <div class="name-date">
+                    <text class="name">Ron Weasley</text>
+                    <text class="date">Saturday, 03/26/23 9:14am</text>
+                </div>
+                <div class="url-box">http://www.spotify.com/Ron-Weasley</div>
+                <div class="playlist-info">
+                    <text class="playlist">PLAYLIST</text>
+                    <text class="playlist-name">Name of Playlist</text>
+                    <text class="attachment">ATTACHMENTS</text>
+                    <text class="attachment-count">04</text>
+                </div>
             </section>
         </section>
     </main>
